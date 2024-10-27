@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;day18.1/src&apos;&#x0D;&#x0A;- Original project: &apos;day17.1&apos;&#x0D;&#x0A;- Destination element: &apos;day18.1/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     day17.1/src/com.app.core&#x0D;&#x0A;     day17.1/src/utils" description="Copy packages" destination="=day18.1/src" element1="/src&lt;com.app.core" element2="/src&lt;utils" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1651899430560" version="1.0"/>
+</session>

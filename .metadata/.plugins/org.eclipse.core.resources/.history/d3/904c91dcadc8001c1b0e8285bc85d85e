@@ -1,0 +1,51 @@
+package utils;
+
+import static com.app.core.Customer.sdf;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Date;
+
+import com.app.core.Customer;
+import com.app.core.ServicePackage;
+
+import cust_excp.CustomerValidationException;
+
+public class CustomerUtils {
+	
+	//sample test date
+	public static ArrayList<Customer> populateCustomerList() throws ParseException {
+		ArrayList<Customer> list = new ArrayList<>();
+		list.add(new Customer("Pawan", "@pawan.com", "pawa@123", sdf.parse("1-2-1990"), 1000, ServicePackage.DIAMOND));
+		list.add(
+				new Customer("Madhur", "@Madhur.org", "Madh@123", sdf.parse("1-2-1990"), 1000, ServicePackage.PLATINUM));
+		list.add(new Customer("Utkarsh", "@Utkarsh.org", "Utka@123", sdf.parse("1-2-1994"), 1000, ServicePackage.DIAMOND));
+		list.add(new Customer("Lalit", "@Lalit.com", "lali@123", sdf.parse("12-12-1990"), 1000,
+				ServicePackage.SILVER));
+		list.add(new Customer("Niharika", "@Niharika.org", "Niha@123", sdf.parse("21-2-1993"), 1000, ServicePackage.GOLD));
+
+		return list;
+	}
+	
+	
+	@SuppressWarnings("unlikely-arg-type")
+	public static Customer findByPk(String email,Date dob,String password,ArrayList<Customer> customers) throws CustomerValidationException {
+		Customer checkPk=new Customer(email, dob);
+		int index=customers.indexOf(checkPk);
+		 if(index>0)
+			System.out.println("Valid email id and DOB");
+		else
+			throw new CustomerValidationException("Invalid email id and password");	
+		 System.out.println("Enter Password:");
+		 if(customers.get(index).equals(customers))
+				 System.out.println("valid password");
+		 else
+			 throw new CustomerValidationException("Invalid password");
+		return checkPk;
+	}
+	
+	
+	
+
+	
+}

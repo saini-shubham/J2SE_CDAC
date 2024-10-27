@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;dustbin.ArrayList.java&apos; to &apos;IntegerList.java&apos;&#x0D;&#x0A;- Original project: &apos;extra&apos;&#x0D;&#x0A;- Original element: &apos;dustbin.ArrayList.java&apos;&#x0D;&#x0A;- Renamed element: &apos;dustbin.IntegerList.java&apos;" description="Rename compilation unit &apos;ArrayList.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;dustbin{ArrayList.java" name="IntegerList.java" references="false" stamp="1651210542630" version="1.0"/>
+</session>
